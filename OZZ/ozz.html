@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<title>OZZ CONCERT CLUB</title>
+	<script type="text/javascript" src="js/jquery.min.js">
+		<script type="text/javascript">
+		var arrLang = {
+			'en' : {
+				'home' : 'Home',
+				'about' : 'About Us',
+				'concerts' : 'Concerts',
+				'contact' : 'Contact Us'
+			},
+			'ru' : {
+				'home' : 'Домашняя страница',
+				'about' : 'О нас',
+				'concerts' : 'Концерты',
+				'contact' : 'Контакты'
+			}
+		};
+
+		$(function(){
+			$('.translate').click(function(){
+				var lang = $(this).attr('id');
+
+				$('.lang').each(function(index.element){
+					$(this).text(arrLang[lang][$(this).attr('key')]);
+				};
+			});
+		});
+	</script>
+</head>
+<body>
+<button class = "translate" id="en">English</button>
+<button class="translate" id="ru">Russian</button>
+
+<ul>
+	<li class="lang" key="home">Home</li>
+	<li class="lang" key="about">About Us</li>
+	<li class="lang" key="concerts">Concerts</li>
+	<li class="lang" key="contact">Contact Us</li>
+</ul>
+</body>
+</html>
