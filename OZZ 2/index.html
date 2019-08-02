@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>OZZ CONCERT CLUB</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<a href="#eng" data-reload>English</a>
+	<a href="#ru" data-reload>Russian</a>
+
+	<p id="hi">
+		Welcome!
+	</p>
+
+	<script>
+		// define language reload  anchors 
+		var dataReload = document.querySelectorAll ("[data-reload");
+
+		// Language translations 
+		var language = {
+			eng: {
+				hello: "Welcome!"
+			},
+			ru: {
+				hello: "Добро пожаловать!"
+			};
+		}
+// Define language via window hash //
+		if (window.location.hash) {
+			if (window.location.hash === "#ru") {
+				hi.textContent = language.rus.welcome;
+			}
+		}
+
+		//define language reload onclick illiteration
+		for (i = 0; i <= dataReload.length; i++) {
+			dataReload[i]. onclick = function() {
+				location.reload(true);
+			}
+		};
+	</script>
+
+</body>
+</html>
