@@ -202,6 +202,7 @@ ul li:hover {
 		background-size: 1500px auto;
 		background-color:  #808080;
 	}
+	
 	aside ul {
 		display: none;
 	}
@@ -210,7 +211,7 @@ ul li:hover {
 		font-family: Arial;
 	}
 	nav a{
-	display: inline-block;
+	display: block;
 	color: #fff;
 	font-family: monospace;
 	font-size: 150%;
@@ -227,10 +228,13 @@ section a{
 a #elf{
 	width: 80px;
 }
-img .mySlides {
-	width: 20px;
-	height: 0 auto;
+
+a img .mySlides {
+	position: relative;
+	height: 10px;
+	width: 10px;	
 }
+
 
 	}
 
